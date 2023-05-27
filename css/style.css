@@ -1,0 +1,87 @@
+#main-div {
+  border: 1px solid rgba(112, 112, 112, 0.308);
+ 
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(113, 112, 116, 0.336);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+h1 {
+  color: #333333;
+  font-family: Arial, sans-serif;
+}
+
+#todo-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+}
+
+#add-btn {
+  cursor: pointer;
+  padding: 9px 15px;
+  background-color: #7e2ffd;
+  color: white;
+  border-radius: 10px;
+}
+.todoText {
+  flex-grow: 1;
+}
+#save-list span {
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  padding: 15px;
+  border-bottom: 1px solid #bebaba;
+ 
+}
+
+.edit-number,
+.complete-number,
+.delete-number {
+  margin-left:5px;
+  background-color: #7e2ffd;
+  color:white;
+  padding: 5px 10px;
+  border-radius: 10px;
+ 
+}
+
+#last-line {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+#todo-counter,
+#pending-filter,
+#task-tasks {
+  font-weight: bold;
+}
+
+#clear-btn {
+  cursor: pointer;
+}
+
+#filter-nav-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.filter-text {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.filter-text:hover {
+  text-decoration: underline;
+}
+
+
