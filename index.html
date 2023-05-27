@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <title>Todo App + KnockoutJS</title>
+    </head>
+    <body>
+        <div id="main-div">
+            <h1>Todo App</h1>
+            <form id="input-form">
+                <input
+                    type="text"
+                    name="text-input"
+                    id="todo-input"
+                    placeholder="Add your new todo"
+                    autocomplete="off"
+                    data-bind="value: todoText"
+                    autofocus
+                    required
+                />
+                <span id="add-btn" data-bind="click: addTodo">+</span>
+            </form>
+
+            <div id="save-list" data-bind="foreach: showTodos">
+                <span>
+                    <div class="todoText" data-bind="text: todoText"></div>
+                    <div data-bind="click: editTodo" class="edit-number">
+                        Edit
+                    </div>
+                    <div
+                        data-bind="click: changeCompleteState"
+                        class="complete-number"
+                    >
+                        Done
+                    </div>
+                    <div data-bind="click: deleteTodo" class="delete-number">
+                        Delete
+                    </div>
+                </span>
+            </div>
+
+            <div id="last-line">
+                <span>
+                    <span>You have</span>
+                    <span
+                        id="todo-counter"
+                        data-bind="text: showTodos().length"
+                    ></span>
+                    <span id="pending-filter" data-bind="text: pending()"
+                        >pending</span
+                    >
+                    <span id="task-tasks" data-bind="text: taskTasks"
+                        >tasks</span
+                    >
+                </span>
+                <span id="clear-btn" data-bind="click: clearAll"
+                    >Clear All</span
+                >
+            </div>
+        </div>
+
+        <div id="filter-nav-text">
+            <p class="filter-text" data-bind="click: todosFilterAll">
+                All &nbsp
+            </p>
+            <p class="filter-text" data-bind="click: todosFilterActive">
+                Active
+            </p>
+            <p class="filter-text" data-bind="click: todosFilterCompleted">
+                &nbspCompleted
+            </p>
+        </div>
+
+        <script src="js/knockout-3.5.1.js"></script>
+        <script src="js/knockout.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
