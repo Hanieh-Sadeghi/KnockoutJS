@@ -1,4 +1,4 @@
-outside the field to save your edits.
+KnockoutJS 
         </p>
     </li>
     <li>
