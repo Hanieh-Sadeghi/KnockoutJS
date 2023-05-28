@@ -5,6 +5,10 @@
     their tasks efficiently, offering various features such as adding, deleting,
     and editing entries, as well as categorizing tasks into three modes: active,
     complete, and all.
+
+   <img src="./img/img1.png" width="200" height="150" />
+   <img src="./img/img2.png" width="200" height="150" />
+
 </p>
 <h2>Features</h2>
 <ul>
