@@ -26,7 +26,10 @@
 
             <div id="save-list" data-bind="foreach: showTodos">
                 <span>
-                    <div class="todoText" data-bind="text: todoText"></div>
+                    <div
+                        data-bind="text:todoText, css: { 'complete-todo': !isActive() }"
+                    ></div>
+                    <div class="Text2" ></div>
                     <div data-bind="click: editTodo" class="edit-number">
                         Edit
                     </div>

@@ -28,9 +28,10 @@ h1 {
   color: white;
   border-radius: 10px;
 }
-.todoText {
+.Text2 {
   flex-grow: 1;
 }
+
 #save-list span {
   display: flex;
   align-items: center;
@@ -84,4 +85,7 @@ h1 {
   text-decoration: underline;
 }
 
-
+.complete-todo {
+  color: gray;
+  text-decoration: line-through;
+}
