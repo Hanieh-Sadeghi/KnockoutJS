@@ -51,7 +51,7 @@
 <ol>
     <li>
         <p>Clone the repository:</p>
-        <pre><code> https://github.com/your-username/todo-app.git
+        <pre><code> https://github.com/Hanieh-Sadeghi/KnockoutJS
 </code></pre>
     </li>
     <li><p>Open the project folder in your preferred code editor.</p></li>
