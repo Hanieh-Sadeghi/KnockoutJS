@@ -1,6 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
 #main-div {
   border: 1px solid rgba(112, 112, 112, 0.308);
- 
   border-radius: 35px;
   box-shadow: 0 2px 4px rgba(113, 112, 116, 0.336);
   padding: 20px;
@@ -86,6 +101,6 @@ h1 {
 }
 
 .complete-todo {
-  color: gray;
+  color: #7e2ffd;
   text-decoration: line-through;
 }
